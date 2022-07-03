@@ -1,0 +1,67 @@
+//  printf("%d",n%10);
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d",&num);//1234
+//	//递归
+//	print(num);
+//	return 0;
+//}
+#include <string.h>
+
+//int my_strlen(char* str)
+//{
+//	int count = 0;
+//	while(*str !='\0')
+//	{
+//	   count++;
+//	    str++;
+//
+//	}
+//	return count;
+//}
+//递归的方法
+//把大事化小
+//my_strlen("bit");
+//1+my_strlen("bit");
+//1+1+my_strlen("bit");
+//1+1+1+my_strlen("bit");
+//1+1+1+0
+//3
+//int my_strlen(char*str)
+//{
+//	if(*str !='\0')
+//		return 1+my_strlen(str+1);
+//	else
+//		return 0;
+//}
+//
+//int main()
+//{
+//   char arr[] = "bit";
+//   int len = my_strlen(arr);
+//   printf("len=%d\n",len);
+//
+//}
+//int main()
+//{
+//	int arr[10] = {1,2,3};//不完全初始化,剩下的元素默认初始化为0
+//	char arr2[5] = {'a','b'};
+//	char arr3[5] = "ab";
+//	char arr4[] = "abcdef";//未定义大小的数组按照实际内容的大小
+//	printf("%d\n",sizeof(arr4));
+//	//sizeof计算arr4所占空间的大小（计算变量 数组类型的大小-单位是字节）-操作符
+//	//7个元素-char 7*1 = 7
+//	//strlen求字符串的长度---求斜杠0之前的字符个数-库函数-使用得引用头文件
+//	//[a b c d e f \0]
+//	printf("%d\n",strlen(arr4));
+//	return 0;
+//}
+//数组在内存中是连续存放的
+int main()
+{
+	int arr[3][4] = {1,2,3,4,5};//第一个方块是行 第二个方块是列
+
+	return 0;
+}
